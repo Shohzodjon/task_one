@@ -107,6 +107,11 @@
 .diagnost--btn__wrapp > button {
   border: 1px solid #47093e;
   color: #47093e;
+  transition: all linear 0.3s;
+}
+.diagnost--btn__wrapp > button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 @media screen and (min-width: 370px) and (max-width: 575.9px) {

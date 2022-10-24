@@ -43,8 +43,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
+.slider--btn__wrapp > button {
+  transition: 0.3s linear all;
+}
+.slider--btn__wrapp > button:hover {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background: #fff;
+  color: var(--mainColor);
+}
+
 .left--flex {
   display: flex;
   flex-direction: column;

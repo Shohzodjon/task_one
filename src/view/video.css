@@ -92,6 +92,15 @@
   padding-top: 2rem;
   margin-right: -4rem;
 }
+.btn--wrapp > button {
+  transition: all 0.3s linear;
+}
+.btn--wrapp > button:hover {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background: #fff;
+  color: var(--mainColor);
+}
 
 @media screen and (min-width: 370px) and (max-width: 575.9px) {
   .video--section {
