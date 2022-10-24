@@ -1,0 +1,38 @@
+.gather--card {
+  margin-top: 10rem;
+  overflow: hidden;
+}
+
+.gather--card__wrapp {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+}
+
+@media screen and (min-width: 370px) and (max-width: 575.9px) {
+  .gather--card {
+    margin-top: 7rem;
+  }
+  .gather--card__wrapp {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .gather--card {
+    margin-top: 7rem;
+  }
+  .gather--card__wrapp {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .gather--card {
+    margin-top: 10rem;
+  }
+  .gather--card__wrapp {
+    gap: 7rem;
+  }
+}

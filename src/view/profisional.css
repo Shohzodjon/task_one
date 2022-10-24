@@ -1,0 +1,80 @@
+.professional {
+  width: 100%;
+  overflow: hidden;
+}
+
+.profesional--flex {
+  display: flex;
+  gap: 1.5rem;
+}
+.profesional--left {
+  width: 25%;
+}
+
+.profesional--right {
+  width: 75%;
+}
+.slider--img__wrap {
+  padding-bottom: 3rem;
+  position: relative;
+}
+.play--video {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+}
+.profesional--right img {
+  width: 100%;
+  height: 57rem;
+}
+.profesional--right .swiper-pagination {
+  display: flex !important;
+  position: absolute;
+  bottom: 0;
+}
+.profesional--right .swiper-pagination-bullet {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: inherit;
+  border: 1px solid #47093e;
+  opacity: 1;
+}
+.profesional--right .swiper-pagination-bullet-active {
+  background: #47093e;
+}
+
+@media screen and (min-width: 370px) and (max-width: 575.9px) {
+  .profesional--flex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .profesional--left,
+  .profesional--right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .profesional--flex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .profesional--left,
+  .profesional--right {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .profesional--flex {
+    gap: 3rem;
+  }
+  .profesional--left {
+    width: 40%;
+  }
+  .profesional--right {
+    width: 60%;
+  }
+}

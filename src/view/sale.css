@@ -1,0 +1,181 @@
+.sale--section {
+  padding-bottom: 6.1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.sale--section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6.1rem;
+  background: linear-gradient(
+    360deg,
+    rgba(71, 9, 62, 0.5) -7.14%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.sale--flex {
+  display: flex;
+  gap: 2.9rem;
+  margin-bottom: 3.5rem;
+}
+.sale--left {
+  width: 25%;
+  padding-top: 5rem;
+}
+
+.sale--right {
+  width: 75%;
+}
+.drug--imges {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.drug--imges .drug__img1 {
+  position: absolute;
+  left: 0;
+  width: 50rem;
+  z-index: 22;
+  top: 5rem;
+}
+.drug--imges .drug__img2 {
+  position: absolute;
+  left: 37%;
+  width: 30rem;
+  z-index: 1;
+  top: 0;
+}
+.sale--right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+.sale--btn {
+  border: 1px solid #47093e;
+  border-radius: 3.35rem;
+  padding: 2rem 8.7rem 2.5rem 8.8rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #47093e;
+  transition: all linear 0.4s;
+}
+.sale--btn:hover {
+  background: #47093e;
+  color: #fff;
+}
+
+@media screen and (min-width: 370px) and (max-width: 576px) {
+  .sale--flex {
+    flex-direction: column;
+    gap: 2.9rem;
+    margin-bottom: 3.5rem;
+  }
+  .sale--left,
+  .sale--right {
+    width: 100%;
+  }
+  .drug--imges .drug__img1 {
+    left: 0;
+    width: 35rem;
+    top: 5rem;
+  }
+  .drug--imges .drug__img2 {
+    left: 37%;
+    width: 20rem;
+    top: 0;
+  }
+  .sale--right ul {
+    gap: 3rem;
+    row-gap: 6rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sale--btn {
+    padding: 1.6rem 5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sale--flex {
+    flex-direction: column;
+    gap: 2.9rem;
+    margin-bottom: 3.5rem;
+  }
+  .sale--left,
+  .sale--right {
+    width: 100%;
+  }
+  .drug--imges .drug__img1 {
+    left: 0;
+    width: 50rem;
+    top: 5rem;
+  }
+  .drug--imges .drug__img2 {
+    left: 37%;
+    width: 30rem;
+    top: 0;
+  }
+  .sale--right ul {
+    gap: 3rem;
+    row-gap: 6rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sale--btn {
+    padding: 1.6rem 5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .sale--flex {
+    flex-direction: column;
+    gap: 2.9rem;
+    margin-bottom: 3.5rem;
+  }
+  .sale--left,
+  .sale--right {
+    width: 100%;
+  }
+  .drug--imges .drug__img1 {
+    left: 0;
+    width: 50rem;
+    top: 5rem;
+  }
+  .drug--imges .drug__img2 {
+    left: 37%;
+    width: 30rem;
+    top: 0;
+  }
+  .sale--right ul {
+    gap: 3rem;
+    row-gap: 6rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sale--btn {
+    padding: 2rem 7rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+  .sale--btn {
+    padding: 1.7rem 5rem;
+    font-size: 1.8rem;
+  }
+  .sale--right ul {
+    gap: 6rem;
+    justify-content: flex-start;
+  }
+}

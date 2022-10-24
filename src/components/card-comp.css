@@ -1,0 +1,28 @@
+.card--wrapp {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.card--wrapp img {
+  width: 6.6rem;
+}
+.card--wrapp h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 154.8%;
+  color: #242424;
+  font-family: "Merriweather";
+}
+
+@media screen and (min-width: 370px) and (max-width: 575.9px) {
+  .card--wrapp {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768.9px) {
+  .card--wrapp {
+    width: 40%;
+    gap: 3rem;
+  }
+}

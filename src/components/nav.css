@@ -1,0 +1,294 @@
+nav {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.nav--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.1rem 0;
+}
+.nav--logo {
+  width: 20.3rem;
+  height: 3.9rem;
+}
+.nav--logo img {
+  width: 100%;
+}
+.nav--list {
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+}
+.nav--list li {
+  cursor: pointer;
+}
+.nav--list svg {
+  height: 3.5rem;
+}
+.nav--icon {
+  transition: all 0.3s linear;
+}
+.nav--list li:hover .nav--icon {
+  opacity: 0.5;
+}
+
+/*  responsive navbar */
+.responsive--wrapp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  z-index: 333;
+  background-color: #fff;
+  transition: height linear 0.3s;
+}
+.active--nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 900px;
+  width: 100%;
+  z-index: 333;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.unactive--nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: 333;
+  background-color: #fff;
+}
+.responsive--nav {
+  position: relative;
+
+  padding: 3.1rem 0;
+  padding-bottom: 10rem;
+}
+.responsive--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responsive--menu {
+  cursor: pointer;
+  display: block;
+  border: 1px solid inherit;
+  padding: 1.5rem;
+  transition: all linear 0.3s;
+  border-radius: 0.8rem;
+  position: relative;
+  z-index: 22;
+}
+.responsive--menu:hover {
+  border-color: #47093e;
+  box-shadow: 2px 4px 10px #947f91;
+}
+.responsive--menu svg {
+  width: 4.5rem;
+}
+.responsive--nav ul {
+  display: flex;
+  margin-top: 15rem;
+  gap: 5.5rem;
+  flex-direction: column;
+}
+.res--line1 {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  z-index: 1;
+}
+.res--line2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+}
+.res--line3 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+}
+.res--line4 {
+  position: absolute;
+  left: 0;
+  top: 65%;
+}
+.res--line5 {
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+.res--link {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 100%;
+  color: #000;
+  transition: all linear 0.3s;
+  position: relative;
+  z-index: 10;
+}
+.res--link:hover {
+  color: #771373;
+}
+
+@media screen and (min-width: 370px) and (max-width: 575.9px) {
+  .nav--logo {
+    width: 10.3rem;
+    height: 3.9rem;
+  }
+  .nav--flex {
+    padding: 4rem 0;
+  }
+  .nav--list {
+    gap: 3rem;
+    padding-right: 2rem;
+  }
+  .nav--list svg {
+    height: 2.8rem;
+  }
+  .responsive--menu {
+    margin-right: 2rem;
+  }
+  .res--line1,
+  .res--line2,
+  .res--line3,
+  .res--line4,
+  .res--line5 {
+    left: -3rem;
+  }
+  .res--line1 svg,
+  .res--line2 svg,
+  .res--line3 svg,
+  .res--line4 svg,
+  .res--line5 svg {
+    width: 130%;
+  }
+  .responsive--nav ul {
+    margin-top: 10rem;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .nav--logo {
+    width: 15.3rem;
+    height: 3.9rem;
+  }
+  .nav--flex {
+    padding: 4rem 0;
+  }
+  .nav--list {
+    gap: 4rem;
+    padding-right: 2rem;
+  }
+  .nav--list svg {
+    height: 3.5rem;
+  }
+  .responsive--menu {
+    margin-right: 2rem;
+  }
+  .res--line1,
+  .res--line2,
+  .res--line3,
+  .res--line4,
+  .res--line5 {
+    left: -3rem;
+  }
+  .res--line1 svg,
+  .res--line2 svg,
+  .res--line3 svg,
+  .res--line4 svg,
+  .res--line5 svg {
+    width: 130%;
+  }
+  .responsive--nav ul {
+    margin-top: 10rem;
+    gap: 5.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .nav--logo {
+    width: 15.3rem;
+    height: 3.9rem;
+  }
+  .nav--flex {
+    padding: 4rem 0;
+  }
+  .nav--list {
+    gap: 3rem;
+    padding-right: 2rem;
+  }
+  .nav--list svg {
+    height: 3.5rem;
+  }
+  .responsive--menu {
+    margin-right: 2rem;
+  }
+  .res--line1,
+  .res--line2,
+  .res--line3,
+  .res--line4,
+  .res--line5 {
+    left: -3rem;
+  }
+  .res--line1 svg,
+  .res--line2 svg,
+  .res--line3 svg,
+  .res--line4 svg,
+  .res--line5 svg {
+    width: 100%;
+  }
+  .responsive--nav ul {
+    margin-top: 10rem;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1139.9px) {
+  .nav--logo {
+    width: 20.3rem;
+    height: 3.9rem;
+  }
+  .nav--flex {
+    padding: 3.1rem 0;
+  }
+  .nav--list {
+    gap: 4.4rem;
+    padding-right: 2rem;
+  }
+  .nav--list svg {
+    height: 3.5rem;
+  }
+  .responsive--menu {
+    margin-right: 2rem;
+  }
+  .res--line1,
+  .res--line2,
+  .res--line3,
+  .res--line4,
+  .res--line5 {
+    left: -3rem;
+  }
+  .res--line1 svg,
+  .res--line2 svg,
+  .res--line3 svg,
+  .res--line4 svg,
+  .res--line5 svg {
+    width: 100%;
+  }
+  .responsive--nav ul {
+    margin-top: 10rem;
+    gap: 5.5rem;
+  }
+}

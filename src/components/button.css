@@ -1,0 +1,36 @@
+.base--btn {
+  display: flex;
+  background: none;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 2.071rem 7.8rem 2.529rem;
+  border-radius: 3.535rem;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+@media screen and (min-width: 370px) and (max-width: 575.9px) {
+  .base--btn {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding: 2rem 7rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .base--btn {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding: 2rem 7rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .base--btn {
+    padding: 2rem 7rem;
+  }
+}
